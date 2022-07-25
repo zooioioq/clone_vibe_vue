@@ -4,7 +4,7 @@
     <!-- header -->
     <header class="header">
       <!-- headerLogo -->
-      <h1 class="headerLogo"> NAVER VIBE </h1>
+      <h1 class="headerLogo"> NAVER <span>VIBE</span> </h1>
       <!-- // headerLogo -->
       <!-- loginBtn -->
       <div class="loginBtn">
@@ -120,4 +120,5 @@ export default {
 </script>
 
 <style>
+@import "../src/assets/css/package.css";
 </style>
