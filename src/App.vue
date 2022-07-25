@@ -21,7 +21,7 @@
       <!-- nav -->
       <nav class="nav">
         <ul>
-          <li v-for="(n,v) in navList" :key="v"><a href="#"><img :src="navImg[v]">{{ navList[v] }}</a></li>
+          <li v-for="(n,v) in navList" :key="v"><a href="#">{{ navList[v] }}</a></li>
         </ul>
       </nav>
       <!-- // nav -->
@@ -104,7 +104,6 @@ export default {
   data(){
     return{ // 데이터 보관함
       navList : ['투데이','차트','최신앨범','DJ 스테이션','VIBE MAG','이달의 노래'],
-      navImg : ['nav_1_off.svg','nav_2_off.svg','nav_3_off.svg','nav_4_off.svg','nav_5_off.svg','nav_6_off.svg'],
       subLink : ['#내돈내듣','ON STAGE','VIBE 오디오'],
       CSLink : ['서비스 소개','VIBE 멤버십'],
       musicTitle : '어제 너는 나를 버렸어',
