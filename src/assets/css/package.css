@@ -64,6 +64,7 @@ table {
   color: #fff;
   margin: 0;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .header .headerLogo > span {
