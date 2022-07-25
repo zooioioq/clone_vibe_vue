@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  margin : 0;
+  padding : 0;
+  background-color: #000;
+} // .wrap
+
+.header {
+  position: fixed;
+  left : 0;
+  top : 0;
+  width: 250px;
+  height: 100%;
+  padding-bottom : 80px;
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: #000;
+  border-right : 1px solid #191919;
+  .headerLogo {
+    width: 100%;
+    height : 70px;
+    padding : 20px 30px;
+    box-sizing: border-box;
+    color : #fff;
+    margin: 0;
+    font-size: 16px;
+    > span {
+      font-size: 24px;
+    } // > span
+  } // .headerLogo
+  .loginBtn {
+    width: 100%;
+    border : 1px solid #191919;
+    box-sizing: border-box;
+    > p {
+      width: 100%;
+      height: 100%;
+      > a {
+        display: block;
+        width: 100%;
+        height : 100%;
+        padding : 10px 70px;
+        box-sizing: border-box;
+        color : #999;
+        text-decoration: none;
+        background : {
+          image : url("../img/login.svg");
+          size : 30px;
+          repeat : no-repeat;
+          position: 30px 5px;
+        }; // background
+      } // > a
+    } // > p
+  } // .loginBtn
+  .searchBox {
+    width: 100%;
+    height : auto;
+    padding : 20px 30px;
+    box-sizing: border-box;
+    > form {
+      width: 100%;
+      height : auto;
+      .search {
+        width: 100%;
+        height : 40px;
+        background-color: #1a1a1a;
+        border-radius: 4px;
+        padding : 10px 0 10px 42px;
+        box-sizing: border-box;
+        border : none;
+        color : #fff;
+        font-size: 18px;
+        background : {
+          image : url("../img/search.svg");
+          position : 10px 10px;
+          size : 20px;
+          repeat : no-repeat;
+        }; // background
+        &:focus {
+          background-color: #333;
+          outline: none;
+          box-shadow: 0 0 4px 0 #0c96ff;
+          background: {
+            image : url("../img/search_on.svg");
+          }; // background
+        } // :focus
+      } // .search
+    } // > form
+  } // .searchBox
+} // .header
+
+.footer {
+  position: fixed;
+  z-index: 101;
+  left : 0;
+  bottom : 0;
+  width : 100%;
+  height: 80px;
+  background-color: #191919;
+} // .footer
