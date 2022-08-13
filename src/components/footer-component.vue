@@ -47,16 +47,9 @@
 <script>
     export default {
     name: 'footer-component',
-    data () {
-      return {
-        title: void 0
-      }
-    },
-    methods: {
-      showTitle () {
-        this.title = 'footer Component!!'
-      }
-    }
+    props: {
+      msg: String
+  }
   }
 </script>
 

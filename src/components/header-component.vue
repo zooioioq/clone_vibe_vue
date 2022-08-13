@@ -58,15 +58,8 @@
 <script>
     export default {
     name: 'header-component',
-    data () {
-      return {
-        title: void 0
-      }
-    },
-    methods: {
-      showTitle () {
-        this.title = 'header Component!!'
-      }
+    props: {
+      msg: String
     }
   }
 </script>
