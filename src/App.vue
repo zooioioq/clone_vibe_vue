@@ -1,7 +1,16 @@
 <template>
+  <headerComponent></headerComponent>
   <router-view/>
 </template>
 
+<script>
+  import headerComponent from '@/components/header-component'
+    export default {
+      components: {
+        headerComponent
+      }
+    }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
