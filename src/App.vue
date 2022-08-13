@@ -1,13 +1,16 @@
 <template>
   <headerComponent></headerComponent>
   <router-view/>
+  <footerComponent></footerComponent>
 </template>
 
 <script>
   import headerComponent from '@/components/header-component'
+  import footerComponent from '@/components/footer-component'
     export default {
       components: {
-        headerComponent
+        headerComponent,
+        footerComponent
       }
     }
 </script>
